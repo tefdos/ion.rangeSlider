@@ -1939,7 +1939,7 @@
             }
 
             if (this.options.prettify && typeof this.options.prettify === "function") {
-                return this.options.prettify(num);
+                return this.options.prettify(num, this.result);
             } else {
                 return this.prettify(num);
             }
